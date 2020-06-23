@@ -7,7 +7,7 @@
 //
 
 #import "FirstScreenViewController.h"
-
+#import "TriangleView.h"
 @interface FirstScreenViewController() <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @end
@@ -16,26 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSAllLibrariesDirectory, NSUserDomainMask, YES);
-    NSString *myPath = [paths objectAtIndex:0];
-    // if you save fies in a folder
-    //myPath = [myPath stringByAppendingPathComponent:@"folder_name"];
-
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    // all files in the path
-    NSArray *directoryContents = [fileManager contentsOfDirectoryAtPath:myPath error:nil];
-
-    // filter image files
-   
-    for (int i = 0; i < directoryContents.count; i++) {
-        NSString *imagePath = [myPath stringByAppendingPathComponent:[directoryContents objectAtIndex:i]];
-        
-        UIImage *tempImage = [UIImage imageWithContentsOfFile:imagePath];
-        NSLog(@"%@", imagePath);
-        // do something you want
-    }
-    
+    TriangleView *triangle = [[TriangleView alloc] initWithFrame:CGRectMake(100, 100, 80, 80)];
+ //   triangle.backgroundColor = UIColor.whiteColor;
+  //  [self.view addSubview:triangle];
+  
     /*
     if ([[NSFileManager defaultManager] fileExistsAtPath:path]){
         cell.preview = [UIImage imageWithContentsOfFile:path1];
@@ -43,7 +27,7 @@
     else {
         cell.preview = [UIImage imageNamed:@"Default-HTML5.PNG"];
     }*/
-    
+   /*
     self.tableView = [UITableView new];
     self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
     self.tableView.delegate = self;
@@ -57,7 +41,7 @@
         [self.tableView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor]
     ]];
     //self.view.backgroundColor = UIColor.redColor;
-    
+    */
 }
 #pragma mark - UITableViewDelegate
 

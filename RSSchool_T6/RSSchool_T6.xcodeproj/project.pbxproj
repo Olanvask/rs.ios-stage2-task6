@@ -14,6 +14,9 @@
 		487B753224A08CF200F18CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487B753024A08CF200F18CDE /* LaunchScreen.storyboard */; };
 		487B753524A08CF200F18CDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B753424A08CF200F18CDE /* main.m */; };
 		487B754024A0981E00F18CDE /* FirstScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B753F24A0981E00F18CDE /* FirstScreenViewController.m */; };
+		487B754624A2319400F18CDE /* ViewWithShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B754524A2319400F18CDE /* ViewWithShapes.m */; };
+		487B754924A2327F00F18CDE /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B754824A2327F00F18CDE /* TriangleView.m */; };
+		487B754C24A23D4500F18CDE /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B754B24A23D4500F18CDE /* CircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,12 @@
 		487B753424A08CF200F18CDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		487B753E24A0981E00F18CDE /* FirstScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstScreenViewController.h; sourceTree = "<group>"; };
 		487B753F24A0981E00F18CDE /* FirstScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstScreenViewController.m; sourceTree = "<group>"; };
+		487B754424A2319400F18CDE /* ViewWithShapes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewWithShapes.h; sourceTree = "<group>"; };
+		487B754524A2319400F18CDE /* ViewWithShapes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewWithShapes.m; sourceTree = "<group>"; };
+		487B754724A2327F00F18CDE /* TriangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
+		487B754824A2327F00F18CDE /* TriangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
+		487B754A24A23D4500F18CDE /* CircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		487B754B24A23D4500F18CDE /* CircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,14 +72,20 @@
 			isa = PBXGroup;
 			children = (
 				487B752224A08CEF00F18CDE /* AppDelegate.h */,
+				487B754724A2327F00F18CDE /* TriangleView.h */,
+				487B754824A2327F00F18CDE /* TriangleView.m */,
+				487B754A24A23D4500F18CDE /* CircleView.h */,
+				487B754B24A23D4500F18CDE /* CircleView.m */,
+				487B754524A2319400F18CDE /* ViewWithShapes.m */,
+				487B754424A2319400F18CDE /* ViewWithShapes.h */,
 				487B753F24A0981E00F18CDE /* FirstScreenViewController.m */,
 				487B753E24A0981E00F18CDE /* FirstScreenViewController.h */,
-				487B752524A08CEF00F18CDE /* SceneDelegate.h */,
 				487B752624A08CEF00F18CDE /* SceneDelegate.m */,
 				487B752324A08CEF00F18CDE /* AppDelegate.m */,
 				487B752824A08CEF00F18CDE /* ViewController.h */,
 				487B752924A08CEF00F18CDE /* ViewController.m */,
 				487B752E24A08CF200F18CDE /* Assets.xcassets */,
+				487B752524A08CEF00F18CDE /* SceneDelegate.h */,
 				487B753024A08CF200F18CDE /* LaunchScreen.storyboard */,
 				487B753324A08CF200F18CDE /* Info.plist */,
 				487B753424A08CF200F18CDE /* main.m */,
@@ -147,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487B754924A2327F00F18CDE /* TriangleView.m in Sources */,
 				487B752A24A08CEF00F18CDE /* ViewController.m in Sources */,
 				487B754024A0981E00F18CDE /* FirstScreenViewController.m in Sources */,
+				487B754624A2319400F18CDE /* ViewWithShapes.m in Sources */,
+				487B754C24A23D4500F18CDE /* CircleView.m in Sources */,
 				487B752424A08CEF00F18CDE /* AppDelegate.m in Sources */,
 				487B753524A08CF200F18CDE /* main.m in Sources */,
 				487B752724A08CEF00F18CDE /* SceneDelegate.m in Sources */,
