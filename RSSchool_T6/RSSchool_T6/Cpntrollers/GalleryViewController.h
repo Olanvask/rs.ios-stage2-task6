@@ -1,8 +1,8 @@
 //
-//  ViewWithShapes.h
+//  GalleryViewController.h
 //  RSSchool_T6
 //
-//  Created by Oleg Vasiluk on 6/23/20.
+//  Created by Oleg Vasiluk on 6/24/20.
 //  Copyright © 2020 Oleg Vasiluk. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewWithShapes : UIView
+@interface GalleryViewController : UIViewController
 
 @end
 

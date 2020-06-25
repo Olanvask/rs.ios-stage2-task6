@@ -22,7 +22,12 @@
     } else {
         return;
     }
-    self.window.rootViewController = [FirstScreenViewController new];
+    FirstScreenViewController *firstScreenViewController = [FirstScreenViewController new];
+        UINavigationController *navigationController = [[UINavigationController alloc]
+                                                        initWithRootViewController:firstScreenViewController];
+     
+        
+    [self.window setRootViewController:navigationController];
     self.window.backgroundColor = UIColor.whiteColor;
     [self.window makeKeyAndVisible];
     

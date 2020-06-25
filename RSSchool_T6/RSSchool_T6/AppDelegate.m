@@ -20,7 +20,12 @@
     float ver = [[[UIDevice currentDevice] systemVersion] floatValue];
     if (ver < 13.0) {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window setRootViewController:[FirstScreenViewController new]];
+        FirstScreenViewController *firstScreenViewController = [FirstScreenViewController new];
+        UINavigationController *navigationController = [[UINavigationController alloc]
+                                                        initWithRootViewController:firstScreenViewController];
+     
+        
+    [self.window setRootViewController:navigationController];
     self.window.backgroundColor = [UIColor whiteColor];
         [self.window makeKeyAndVisible];}
     return YES;

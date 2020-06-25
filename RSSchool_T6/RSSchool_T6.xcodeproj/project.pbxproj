@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48372DBA24A34B3500086EEA /* RectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372DB924A34B3500086EEA /* RectangleView.m */; };
+		48372DC024A3626100086EEA /* StartButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372DBF24A3626100086EEA /* StartButton.m */; };
+		48372E0424A3C1E600086EEA /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E0324A3C1E600086EEA /* GalleryViewController.m */; };
+		48372E0924A3C4A700086EEA /* MediaAggregator.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E0824A3C4A700086EEA /* MediaAggregator.m */; };
+		48372E0F24A47B3A00086EEA /* GalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E0E24A47B3A00086EEA /* GalleryCollectionViewCell.m */; };
+		48372E1524A4CD2A00086EEA /* ModalPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E1424A4CD2A00086EEA /* ModalPreviewViewController.m */; };
+		48372E1824A4FED700086EEA /* HeaderLabelForFirstScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E1724A4FED700086EEA /* HeaderLabelForFirstScreen.m */; };
+		48372E1D24A52D9700086EEA /* HeaderLabelForCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E1C24A52D9700086EEA /* HeaderLabelForCollectionViewController.m */; };
 		487B752424A08CEF00F18CDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B752324A08CEF00F18CDE /* AppDelegate.m */; };
 		487B752724A08CEF00F18CDE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B752624A08CEF00F18CDE /* SceneDelegate.m */; };
-		487B752A24A08CEF00F18CDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B752924A08CEF00F18CDE /* ViewController.m */; };
 		487B752F24A08CF200F18CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487B752E24A08CF200F18CDE /* Assets.xcassets */; };
 		487B753224A08CF200F18CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487B753024A08CF200F18CDE /* LaunchScreen.storyboard */; };
 		487B753524A08CF200F18CDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B753424A08CF200F18CDE /* main.m */; };
@@ -17,16 +24,31 @@
 		487B754624A2319400F18CDE /* ViewWithShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B754524A2319400F18CDE /* ViewWithShapes.m */; };
 		487B754924A2327F00F18CDE /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B754824A2327F00F18CDE /* TriangleView.m */; };
 		487B754C24A23D4500F18CDE /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B754B24A23D4500F18CDE /* CircleView.m */; };
+		4895520A24A2852500C358B5 /* UIColor+task6.m in Sources */ = {isa = PBXBuildFile; fileRef = 4895520924A2852500C358B5 /* UIColor+task6.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48372DB824A34B3500086EEA /* RectangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectangleView.h; sourceTree = "<group>"; };
+		48372DB924A34B3500086EEA /* RectangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectangleView.m; sourceTree = "<group>"; };
+		48372DBE24A3626100086EEA /* StartButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartButton.h; sourceTree = "<group>"; };
+		48372DBF24A3626100086EEA /* StartButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartButton.m; sourceTree = "<group>"; };
+		48372E0224A3C1E600086EEA /* GalleryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		48372E0324A3C1E600086EEA /* GalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		48372E0724A3C4A700086EEA /* MediaAggregator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaAggregator.h; sourceTree = "<group>"; };
+		48372E0824A3C4A700086EEA /* MediaAggregator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaAggregator.m; sourceTree = "<group>"; };
+		48372E0D24A47B3A00086EEA /* GalleryCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewCell.h; sourceTree = "<group>"; };
+		48372E0E24A47B3A00086EEA /* GalleryCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewCell.m; sourceTree = "<group>"; };
+		48372E1324A4CD2A00086EEA /* ModalPreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalPreviewViewController.h; sourceTree = "<group>"; };
+		48372E1424A4CD2A00086EEA /* ModalPreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalPreviewViewController.m; sourceTree = "<group>"; };
+		48372E1624A4FED700086EEA /* HeaderLabelForFirstScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderLabelForFirstScreen.h; sourceTree = "<group>"; };
+		48372E1724A4FED700086EEA /* HeaderLabelForFirstScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderLabelForFirstScreen.m; sourceTree = "<group>"; };
+		48372E1B24A52D9700086EEA /* HeaderLabelForCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderLabelForCollectionViewController.h; sourceTree = "<group>"; };
+		48372E1C24A52D9700086EEA /* HeaderLabelForCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderLabelForCollectionViewController.m; sourceTree = "<group>"; };
 		487B751F24A08CEF00F18CDE /* RSSchool_T6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487B752224A08CEF00F18CDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		487B752324A08CEF00F18CDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		487B752524A08CEF00F18CDE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		487B752624A08CEF00F18CDE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		487B752824A08CEF00F18CDE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		487B752924A08CEF00F18CDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		487B752E24A08CF200F18CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487B753124A08CF200F18CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		487B753324A08CF200F18CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +61,8 @@
 		487B754824A2327F00F18CDE /* TriangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
 		487B754A24A23D4500F18CDE /* CircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
 		487B754B24A23D4500F18CDE /* CircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		4895520824A2852500C358B5 /* UIColor+task6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+task6.h"; sourceTree = "<group>"; };
+		4895520924A2852500C358B5 /* UIColor+task6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+task6.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +76,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48372E1024A4BAA400086EEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48372E1A24A52B7F00086EEA /* For GalleryViewController */,
+				48372E1924A52B0D00086EEA /* For FirstScreenViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48372E1124A4BABC00086EEA /* Cpntrollers */ = {
+			isa = PBXGroup;
+			children = (
+				48372E0224A3C1E600086EEA /* GalleryViewController.h */,
+				48372E0324A3C1E600086EEA /* GalleryViewController.m */,
+				487B753E24A0981E00F18CDE /* FirstScreenViewController.h */,
+				487B753F24A0981E00F18CDE /* FirstScreenViewController.m */,
+				48372E1324A4CD2A00086EEA /* ModalPreviewViewController.h */,
+				48372E1424A4CD2A00086EEA /* ModalPreviewViewController.m */,
+			);
+			path = Cpntrollers;
+			sourceTree = "<group>";
+		};
+		48372E1224A4BB1000086EEA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				48372E0724A3C4A700086EEA /* MediaAggregator.h */,
+				48372E0824A3C4A700086EEA /* MediaAggregator.m */,
+				4895520824A2852500C358B5 /* UIColor+task6.h */,
+				4895520924A2852500C358B5 /* UIColor+task6.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		48372E1924A52B0D00086EEA /* For FirstScreenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48372E1724A4FED700086EEA /* HeaderLabelForFirstScreen.m */,
+				48372E1624A4FED700086EEA /* HeaderLabelForFirstScreen.h */,
+				48372DBE24A3626100086EEA /* StartButton.h */,
+				48372DBF24A3626100086EEA /* StartButton.m */,
+				487B754424A2319400F18CDE /* ViewWithShapes.h */,
+				487B754524A2319400F18CDE /* ViewWithShapes.m */,
+				487B754A24A23D4500F18CDE /* CircleView.h */,
+				487B754B24A23D4500F18CDE /* CircleView.m */,
+				48372DB824A34B3500086EEA /* RectangleView.h */,
+				48372DB924A34B3500086EEA /* RectangleView.m */,
+				487B754724A2327F00F18CDE /* TriangleView.h */,
+				487B754824A2327F00F18CDE /* TriangleView.m */,
+			);
+			path = "For FirstScreenViewController";
+			sourceTree = "<group>";
+		};
+		48372E1A24A52B7F00086EEA /* For GalleryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48372E0D24A47B3A00086EEA /* GalleryCollectionViewCell.h */,
+				48372E0E24A47B3A00086EEA /* GalleryCollectionViewCell.m */,
+				48372E1B24A52D9700086EEA /* HeaderLabelForCollectionViewController.h */,
+				48372E1C24A52D9700086EEA /* HeaderLabelForCollectionViewController.m */,
+			);
+			path = "For GalleryViewController";
+			sourceTree = "<group>";
+		};
 		487B751624A08CEF00F18CDE = {
 			isa = PBXGroup;
 			children = (
@@ -71,19 +158,12 @@
 		487B752124A08CEF00F18CDE /* RSSchool_T6 */ = {
 			isa = PBXGroup;
 			children = (
-				487B752224A08CEF00F18CDE /* AppDelegate.h */,
-				487B754724A2327F00F18CDE /* TriangleView.h */,
-				487B754824A2327F00F18CDE /* TriangleView.m */,
-				487B754A24A23D4500F18CDE /* CircleView.h */,
-				487B754B24A23D4500F18CDE /* CircleView.m */,
-				487B754524A2319400F18CDE /* ViewWithShapes.m */,
-				487B754424A2319400F18CDE /* ViewWithShapes.h */,
-				487B753F24A0981E00F18CDE /* FirstScreenViewController.m */,
-				487B753E24A0981E00F18CDE /* FirstScreenViewController.h */,
+				48372E1224A4BB1000086EEA /* Tools */,
+				48372E1124A4BABC00086EEA /* Cpntrollers */,
+				48372E1024A4BAA400086EEA /* Views */,
 				487B752624A08CEF00F18CDE /* SceneDelegate.m */,
+				487B752224A08CEF00F18CDE /* AppDelegate.h */,
 				487B752324A08CEF00F18CDE /* AppDelegate.m */,
-				487B752824A08CEF00F18CDE /* ViewController.h */,
-				487B752924A08CEF00F18CDE /* ViewController.m */,
 				487B752E24A08CF200F18CDE /* Assets.xcassets */,
 				487B752524A08CEF00F18CDE /* SceneDelegate.h */,
 				487B753024A08CF200F18CDE /* LaunchScreen.storyboard */,
@@ -163,13 +243,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				487B754924A2327F00F18CDE /* TriangleView.m in Sources */,
-				487B752A24A08CEF00F18CDE /* ViewController.m in Sources */,
+				48372DBA24A34B3500086EEA /* RectangleView.m in Sources */,
 				487B754024A0981E00F18CDE /* FirstScreenViewController.m in Sources */,
+				4895520A24A2852500C358B5 /* UIColor+task6.m in Sources */,
+				48372E0424A3C1E600086EEA /* GalleryViewController.m in Sources */,
+				48372E1524A4CD2A00086EEA /* ModalPreviewViewController.m in Sources */,
 				487B754624A2319400F18CDE /* ViewWithShapes.m in Sources */,
+				48372E0F24A47B3A00086EEA /* GalleryCollectionViewCell.m in Sources */,
 				487B754C24A23D4500F18CDE /* CircleView.m in Sources */,
 				487B752424A08CEF00F18CDE /* AppDelegate.m in Sources */,
+				48372E0924A3C4A700086EEA /* MediaAggregator.m in Sources */,
 				487B753524A08CF200F18CDE /* main.m in Sources */,
 				487B752724A08CEF00F18CDE /* SceneDelegate.m in Sources */,
+				48372E1824A4FED700086EEA /* HeaderLabelForFirstScreen.m in Sources */,
+				48372E1D24A52D9700086EEA /* HeaderLabelForCollectionViewController.m in Sources */,
+				48372DC024A3626100086EEA /* StartButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J45FDHWCGV;
 				INFOPLIST_FILE = RSSchool_T6/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J45FDHWCGV;
 				INFOPLIST_FILE = RSSchool_T6/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
