@@ -12,12 +12,14 @@
 NS_ASSUME_NONNULL_BEGIN
 @protocol MediaAggregatorDelegate <NSObject>
 -(void)galleryDidChage:(PHFetchResultChangeDetails *)details;
+
 @end
 @interface MediaAggregator : NSObject
 
 @property (nonatomic, strong) PHFetchResult<PHAsset*> *collectionAssetResult;
 @property (nonatomic, weak, nullable) id <MediaAggregatorDelegate> delegate;
 -(void)fetchMedia;
+- (void)getVideoForExport:(PHAsset*)asset resultHandler:(void (^)(NSURL *__nullable fileURL))resultHandler;
 @end
 
 NS_ASSUME_NONNULL_END

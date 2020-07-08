@@ -15,6 +15,8 @@
 		48372E1524A4CD2A00086EEA /* ModalPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E1424A4CD2A00086EEA /* ModalPreviewViewController.m */; };
 		48372E1824A4FED700086EEA /* HeaderLabelForFirstScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E1724A4FED700086EEA /* HeaderLabelForFirstScreen.m */; };
 		48372E1D24A52D9700086EEA /* HeaderLabelForCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E1C24A52D9700086EEA /* HeaderLabelForCollectionViewController.m */; };
+		48372E2024A5FA2C00086EEA /* TabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E1F24A5FA2C00086EEA /* TabBarControllerViewController.m */; };
+		48372E2624A5FAF800086EEA /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48372E2524A5FAF800086EEA /* InfoTableViewController.m */; };
 		487B752424A08CEF00F18CDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B752324A08CEF00F18CDE /* AppDelegate.m */; };
 		487B752724A08CEF00F18CDE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B752624A08CEF00F18CDE /* SceneDelegate.m */; };
 		487B752F24A08CF200F18CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487B752E24A08CF200F18CDE /* Assets.xcassets */; };
@@ -24,7 +26,20 @@
 		487B754624A2319400F18CDE /* ViewWithShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B754524A2319400F18CDE /* ViewWithShapes.m */; };
 		487B754924A2327F00F18CDE /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B754824A2327F00F18CDE /* TriangleView.m */; };
 		487B754C24A23D4500F18CDE /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 487B754B24A23D4500F18CDE /* CircleView.m */; };
+		48810DF224AA9D14008AABA2 /* CloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 48810DF124AA9D14008AABA2 /* CloseButton.m */; };
+		48810E0324AD1BB1008AABA2 /* InfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48810E0224AD1BB1008AABA2 /* InfoTableViewCell.m */; };
+		48810E0924ADC836008AABA2 /* TableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 48810E0824ADC836008AABA2 /* TableViewHeader.m */; };
+		48810E0C24AE020E008AABA2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48810E0B24AE020E008AABA2 /* DetailViewController.m */; };
+		48810E1024AF736F008AABA2 /* CreationDateLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48810E0F24AF736F008AABA2 /* CreationDateLabel.m */; };
+		48810E1324AF8734008AABA2 /* ModifyDateLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48810E1224AF8734008AABA2 /* ModifyDateLabel.m */; };
+		48810E1624AF8B01008AABA2 /* TypeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48810E1524AF8B01008AABA2 /* TypeLabel.m */; };
+		48810E1924B04167008AABA2 /* ShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 48810E1824B04167008AABA2 /* ShareButton.m */; };
 		4895520A24A2852500C358B5 /* UIColor+task6.m in Sources */ = {isa = PBXBuildFile; fileRef = 4895520924A2852500C358B5 /* UIColor+task6.m */; };
+		48DAD88624B0B283009029D8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DAD88524B0B283009029D8 /* HomeViewController.m */; };
+		48DAD88A24B0C648009029D8 /* HeaderLabelForHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DAD88924B0C648009029D8 /* HeaderLabelForHomeViewController.m */; };
+		48DAD88D24B0C8A3009029D8 /* PhoneInfoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DAD88C24B0C8A3009029D8 /* PhoneInfoLabel.m */; };
+		48DAD89024B0DC98009029D8 /* GitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DAD88F24B0DC98009029D8 /* GitButton.m */; };
+		48DAD89324B0DCB2009029D8 /* GoToStartButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DAD89224B0DCB2009029D8 /* GoToStartButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +59,10 @@
 		48372E1724A4FED700086EEA /* HeaderLabelForFirstScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderLabelForFirstScreen.m; sourceTree = "<group>"; };
 		48372E1B24A52D9700086EEA /* HeaderLabelForCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderLabelForCollectionViewController.h; sourceTree = "<group>"; };
 		48372E1C24A52D9700086EEA /* HeaderLabelForCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderLabelForCollectionViewController.m; sourceTree = "<group>"; };
+		48372E1E24A5FA2C00086EEA /* TabBarControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarControllerViewController.h; sourceTree = "<group>"; };
+		48372E1F24A5FA2C00086EEA /* TabBarControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarControllerViewController.m; sourceTree = "<group>"; };
+		48372E2424A5FAF800086EEA /* InfoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoTableViewController.h; sourceTree = "<group>"; };
+		48372E2524A5FAF800086EEA /* InfoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
 		487B751F24A08CEF00F18CDE /* RSSchool_T6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487B752224A08CEF00F18CDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		487B752324A08CEF00F18CDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,8 +80,34 @@
 		487B754824A2327F00F18CDE /* TriangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
 		487B754A24A23D4500F18CDE /* CircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
 		487B754B24A23D4500F18CDE /* CircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		48810DF024AA9D14008AABA2 /* CloseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloseButton.h; sourceTree = "<group>"; };
+		48810DF124AA9D14008AABA2 /* CloseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloseButton.m; sourceTree = "<group>"; };
+		48810E0124AD1BB1008AABA2 /* InfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoTableViewCell.h; sourceTree = "<group>"; };
+		48810E0224AD1BB1008AABA2 /* InfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewCell.m; sourceTree = "<group>"; };
+		48810E0724ADC836008AABA2 /* TableViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewHeader.h; sourceTree = "<group>"; };
+		48810E0824ADC836008AABA2 /* TableViewHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewHeader.m; sourceTree = "<group>"; };
+		48810E0A24AE020E008AABA2 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		48810E0B24AE020E008AABA2 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		48810E0E24AF736E008AABA2 /* CreationDateLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreationDateLabel.h; sourceTree = "<group>"; };
+		48810E0F24AF736F008AABA2 /* CreationDateLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreationDateLabel.m; sourceTree = "<group>"; };
+		48810E1124AF8734008AABA2 /* ModifyDateLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifyDateLabel.h; sourceTree = "<group>"; };
+		48810E1224AF8734008AABA2 /* ModifyDateLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifyDateLabel.m; sourceTree = "<group>"; };
+		48810E1424AF8B01008AABA2 /* TypeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeLabel.h; sourceTree = "<group>"; };
+		48810E1524AF8B01008AABA2 /* TypeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeLabel.m; sourceTree = "<group>"; };
+		48810E1724B04167008AABA2 /* ShareButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareButton.h; sourceTree = "<group>"; };
+		48810E1824B04167008AABA2 /* ShareButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareButton.m; sourceTree = "<group>"; };
 		4895520824A2852500C358B5 /* UIColor+task6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+task6.h"; sourceTree = "<group>"; };
 		4895520924A2852500C358B5 /* UIColor+task6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+task6.m"; sourceTree = "<group>"; };
+		48DAD88424B0B283009029D8 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		48DAD88524B0B283009029D8 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		48DAD88824B0C648009029D8 /* HeaderLabelForHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderLabelForHomeViewController.h; sourceTree = "<group>"; };
+		48DAD88924B0C648009029D8 /* HeaderLabelForHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderLabelForHomeViewController.m; sourceTree = "<group>"; };
+		48DAD88B24B0C8A3009029D8 /* PhoneInfoLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneInfoLabel.h; sourceTree = "<group>"; };
+		48DAD88C24B0C8A3009029D8 /* PhoneInfoLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneInfoLabel.m; sourceTree = "<group>"; };
+		48DAD88E24B0DC98009029D8 /* GitButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitButton.h; sourceTree = "<group>"; };
+		48DAD88F24B0DC98009029D8 /* GitButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitButton.m; sourceTree = "<group>"; };
+		48DAD89124B0DCB2009029D8 /* GoToStartButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoToStartButton.h; sourceTree = "<group>"; };
+		48DAD89224B0DCB2009029D8 /* GoToStartButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoToStartButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +124,10 @@
 		48372E1024A4BAA400086EEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				48DAD88724B0C44E009029D8 /* ForHomeVieController */,
+				48810E0D24AF7329008AABA2 /* ForDetailController */,
+				48810DF324ACC2FD008AABA2 /* ForInfoTableViewController */,
+				48810DEF24AA9CE5008AABA2 /* For ModalPreviewController */,
 				48372E1A24A52B7F00086EEA /* For GalleryViewController */,
 				48372E1924A52B0D00086EEA /* For FirstScreenViewController */,
 			);
@@ -92,8 +141,16 @@
 				48372E0324A3C1E600086EEA /* GalleryViewController.m */,
 				487B753E24A0981E00F18CDE /* FirstScreenViewController.h */,
 				487B753F24A0981E00F18CDE /* FirstScreenViewController.m */,
+				48372E1E24A5FA2C00086EEA /* TabBarControllerViewController.h */,
+				48372E1F24A5FA2C00086EEA /* TabBarControllerViewController.m */,
 				48372E1324A4CD2A00086EEA /* ModalPreviewViewController.h */,
 				48372E1424A4CD2A00086EEA /* ModalPreviewViewController.m */,
+				48372E2424A5FAF800086EEA /* InfoTableViewController.h */,
+				48372E2524A5FAF800086EEA /* InfoTableViewController.m */,
+				48810E0A24AE020E008AABA2 /* DetailViewController.h */,
+				48810E0B24AE020E008AABA2 /* DetailViewController.m */,
+				48DAD88424B0B283009029D8 /* HomeViewController.h */,
+				48DAD88524B0B283009029D8 /* HomeViewController.m */,
 			);
 			path = Cpntrollers;
 			sourceTree = "<group>";
@@ -173,6 +230,56 @@
 			path = RSSchool_T6;
 			sourceTree = "<group>";
 		};
+		48810DEF24AA9CE5008AABA2 /* For ModalPreviewController */ = {
+			isa = PBXGroup;
+			children = (
+				48810DF024AA9D14008AABA2 /* CloseButton.h */,
+				48810DF124AA9D14008AABA2 /* CloseButton.m */,
+			);
+			path = "For ModalPreviewController";
+			sourceTree = "<group>";
+		};
+		48810DF324ACC2FD008AABA2 /* ForInfoTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48810E0124AD1BB1008AABA2 /* InfoTableViewCell.h */,
+				48810E0224AD1BB1008AABA2 /* InfoTableViewCell.m */,
+				48810E0724ADC836008AABA2 /* TableViewHeader.h */,
+				48810E0824ADC836008AABA2 /* TableViewHeader.m */,
+			);
+			path = ForInfoTableViewController;
+			sourceTree = "<group>";
+		};
+		48810E0D24AF7329008AABA2 /* ForDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				48810E0E24AF736E008AABA2 /* CreationDateLabel.h */,
+				48810E0F24AF736F008AABA2 /* CreationDateLabel.m */,
+				48810E1124AF8734008AABA2 /* ModifyDateLabel.h */,
+				48810E1224AF8734008AABA2 /* ModifyDateLabel.m */,
+				48810E1424AF8B01008AABA2 /* TypeLabel.h */,
+				48810E1524AF8B01008AABA2 /* TypeLabel.m */,
+				48810E1724B04167008AABA2 /* ShareButton.h */,
+				48810E1824B04167008AABA2 /* ShareButton.m */,
+			);
+			path = ForDetailController;
+			sourceTree = "<group>";
+		};
+		48DAD88724B0C44E009029D8 /* ForHomeVieController */ = {
+			isa = PBXGroup;
+			children = (
+				48DAD88824B0C648009029D8 /* HeaderLabelForHomeViewController.h */,
+				48DAD88924B0C648009029D8 /* HeaderLabelForHomeViewController.m */,
+				48DAD88B24B0C8A3009029D8 /* PhoneInfoLabel.h */,
+				48DAD88C24B0C8A3009029D8 /* PhoneInfoLabel.m */,
+				48DAD88E24B0DC98009029D8 /* GitButton.h */,
+				48DAD88F24B0DC98009029D8 /* GitButton.m */,
+				48DAD89124B0DCB2009029D8 /* GoToStartButton.h */,
+				48DAD89224B0DCB2009029D8 /* GoToStartButton.m */,
+			);
+			path = ForHomeVieController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,22 +349,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48810E0C24AE020E008AABA2 /* DetailViewController.m in Sources */,
 				487B754924A2327F00F18CDE /* TriangleView.m in Sources */,
+				48372E2024A5FA2C00086EEA /* TabBarControllerViewController.m in Sources */,
 				48372DBA24A34B3500086EEA /* RectangleView.m in Sources */,
 				487B754024A0981E00F18CDE /* FirstScreenViewController.m in Sources */,
 				4895520A24A2852500C358B5 /* UIColor+task6.m in Sources */,
+				48DAD89024B0DC98009029D8 /* GitButton.m in Sources */,
 				48372E0424A3C1E600086EEA /* GalleryViewController.m in Sources */,
+				48810E1924B04167008AABA2 /* ShareButton.m in Sources */,
 				48372E1524A4CD2A00086EEA /* ModalPreviewViewController.m in Sources */,
+				48DAD88D24B0C8A3009029D8 /* PhoneInfoLabel.m in Sources */,
+				48DAD88A24B0C648009029D8 /* HeaderLabelForHomeViewController.m in Sources */,
 				487B754624A2319400F18CDE /* ViewWithShapes.m in Sources */,
 				48372E0F24A47B3A00086EEA /* GalleryCollectionViewCell.m in Sources */,
+				48810E1324AF8734008AABA2 /* ModifyDateLabel.m in Sources */,
+				48810E0324AD1BB1008AABA2 /* InfoTableViewCell.m in Sources */,
 				487B754C24A23D4500F18CDE /* CircleView.m in Sources */,
+				48DAD89324B0DCB2009029D8 /* GoToStartButton.m in Sources */,
+				48810E0924ADC836008AABA2 /* TableViewHeader.m in Sources */,
 				487B752424A08CEF00F18CDE /* AppDelegate.m in Sources */,
 				48372E0924A3C4A700086EEA /* MediaAggregator.m in Sources */,
 				487B753524A08CF200F18CDE /* main.m in Sources */,
+				48810E1024AF736F008AABA2 /* CreationDateLabel.m in Sources */,
+				48810DF224AA9D14008AABA2 /* CloseButton.m in Sources */,
 				487B752724A08CEF00F18CDE /* SceneDelegate.m in Sources */,
 				48372E1824A4FED700086EEA /* HeaderLabelForFirstScreen.m in Sources */,
+				48810E1624AF8B01008AABA2 /* TypeLabel.m in Sources */,
+				48DAD88624B0B283009029D8 /* HomeViewController.m in Sources */,
 				48372E1D24A52D9700086EEA /* HeaderLabelForCollectionViewController.m in Sources */,
 				48372DC024A3626100086EEA /* StartButton.m in Sources */,
+				48372E2624A5FAF800086EEA /* InfoTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

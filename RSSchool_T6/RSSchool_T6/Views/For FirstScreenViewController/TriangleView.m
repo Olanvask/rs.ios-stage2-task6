@@ -18,6 +18,7 @@
     }
     return self;
 }
+//-------------------------------------------------------------------------------------------------
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     
@@ -34,6 +35,7 @@
     [self.layer addSublayer:shapeLayer];
     self.layer.mask = shapeLayer;
 }
+//-------------------------------------------------------------------------------------------------
 -(void)animate{
     [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         [self setTransform:CGAffineTransformRotate(self.transform, M_PI_2)];

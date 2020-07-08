@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GalleryCollectionViewCell : UICollectionViewCell
 -(void)setImage:(UIImage *)image;
+-(void)setDefaultImage:(UIImage *)defaultImage;
 @property (nonatomic,strong) UIImageView *imageView;
 @end
 

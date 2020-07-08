@@ -21,11 +21,8 @@
     if (ver < 13.0) {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         FirstScreenViewController *firstScreenViewController = [FirstScreenViewController new];
-        UINavigationController *navigationController = [[UINavigationController alloc]
-                                                        initWithRootViewController:firstScreenViewController];
-     
         
-    [self.window setRootViewController:navigationController];
+    [self.window setRootViewController:firstScreenViewController];
     self.window.backgroundColor = [UIColor whiteColor];
         [self.window makeKeyAndVisible];}
     return YES;

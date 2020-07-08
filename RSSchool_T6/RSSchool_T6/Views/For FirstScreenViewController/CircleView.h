@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CircleView : UIView
-
+-(void)animate;
 @end
 
 NS_ASSUME_NONNULL_END

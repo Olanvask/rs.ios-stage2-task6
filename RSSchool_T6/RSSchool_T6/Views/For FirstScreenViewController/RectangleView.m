@@ -18,7 +18,7 @@
     return self;
 }
 
-
+//-------------------------------------------------------------------------------------------------
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     UIBezierPath *trianglePath = [UIBezierPath bezierPath];
@@ -31,7 +31,7 @@
     [trianglePath closePath];
     
 }
-
+//-------------------------------------------------------------------------------------------------
 -(void)animate{
     [UIView animateWithDuration:1.0 delay:0 options: (UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat) animations:^{
         [self setTransform: CGAffineTransformMakeTranslation(0, 10)];

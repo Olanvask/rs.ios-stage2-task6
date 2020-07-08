@@ -7,77 +7,143 @@
 //
 
 #import "ModalPreviewViewController.h"
+#import "UIColor+task6.h"
+#import "CloseButton.h"
+
+int const CLOSE_BUTTON_SIZE = 40;
+int const MODAL_VC_OFFSET = 5;
 
 @interface ModalPreviewViewController ()
 @property (nonatomic,strong) UIImageView *imageView;
-@property CGFloat scalingIndex;
+@property (nonatomic,strong) UIButton *closeButton;
+@property (nonatomic, assign) CGSize imageSize;
+@property (nonatomic, assign) CGSize willViewSize;
 @end
-//TODO добавить кнопку возврата на предыдущий контроллер
-//добавить обработку ориентации и переделать масштабирование
-@implementation ModalPreviewViewController
 
+@implementation ModalPreviewViewController
+//-------------------------------------------------------------------------------------------------
+-(BOOL)prefersStatusBarHidden{
+    return YES;
+}
+
+//-------------------------------------------------------------------------------------------------
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    self.imageView = [[UIImageView alloc] initWithImage:self.modalImage];
+    
+    self.view.backgroundColor = UIColor.task6White;
+    
+    [self createViews];
+    
+    [self layoutImage];
+    
+    self.willViewSize = self.view.frame.size;
+}
+#pragma mark - Setup layout
+//-------------------------------------------------------------------------------------------------
+-(void)createViews{
+    self.imageView = [UIImageView new];
     [self.view addSubview:self.imageView];
     
-   
-}
--(void)viewWillAppear:(BOOL)animated{
-    [NSLayoutConstraint activateConstraints:@[
-        [self.imageView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
-        [self.imageView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
-        
-    ]];
+    self.closeButton = [[CloseButton alloc] init];
+    [self.closeButton addTarget:self action:@selector(closeButtonTaped) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.closeButton];
     
-    if (self.modalImage.size.width > (self.view.frame.size.width)) {
-        
-        self.modalImage =  [self resizeImage:self.modalImage newWidth:self.view.frame.size.width];
-    }
-    if (self.modalImage.size.height > (self.view.window.screen.bounds.size.height)) {
-        self.modalImage =  [self resizeImage:self.modalImage newHeight:self.view.frame.size.height];
-    }
+}
+//-------------------------------------------------------------------------------------------------
+-(void) viewWillLayoutSubviews{
+    
+    [self layoutImage];
+    [self makeConstraints];
+    
+}
+
+//-------------------------------------------------------------------------------------------------
+-(void)makeConstraints{
+    
+    self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    self.closeButton.translatesAutoresizingMaskIntoConstraints = NO;
+    
     [NSLayoutConstraint activateConstraints:@[
+        
         [self.imageView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
         [self.imageView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
-        [self.imageView.widthAnchor constraintEqualToConstant:self.modalImage.size.width],
-        [self.imageView.heightAnchor constraintEqualToConstant:self.modalImage.size.height],
         
-            ]];}
-- (UIImage *)resizeImage:(UIImage *)image newWidth:(CGFloat)newWidth {
-
-    double scale = newWidth / image.size.width;
-    double newHeight = image.size.height * scale;
-    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
-    [image drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-
-    return newImage;
-}
-- (UIImage *)resizeImage:(UIImage *)image newHeight:(CGFloat)newHeight {
-
-    double scale = newHeight / image.size.width;
-    double newWidth = image.size.height * scale;
-    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
-    [image drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-
-    return newImage;
+        [self.closeButton.topAnchor constraintEqualToAnchor:self.imageView.topAnchor constant: MODAL_VC_OFFSET],
+        [self.closeButton.trailingAnchor constraintEqualToAnchor:self.imageView.trailingAnchor constant:-MODAL_VC_OFFSET],
+        [self.closeButton.widthAnchor constraintGreaterThanOrEqualToConstant:CLOSE_BUTTON_SIZE],
+        [self.closeButton.heightAnchor constraintGreaterThanOrEqualToConstant:CLOSE_BUTTON_SIZE],
+    ]];
 }
 
+//-------------------------------------------------------------------------------------------------
+-(void) layoutImage{
+    
+    UIImage *tempImage = [UIImage new];
+    
+    if (self.modalImage.size.width > self.willViewSize.width) {
+        
+        tempImage =  [self resizeImage:self.modalImage newWidth:self.willViewSize.width];
+        
+        if (tempImage.size.height > self.willViewSize.height) {
+            tempImage =  [self resizeImage:tempImage newHeight:self.willViewSize.height];
+        }
+        
+    }else if (self.modalImage.size.height > (self.willViewSize.width))  {
+        
+        tempImage =  [self resizeImage:self.modalImage newHeight:self.willViewSize.height];
+        
+        if (tempImage.size.width > self.willViewSize.width) {
+            tempImage =  [self resizeImage:tempImage newWidth:self.willViewSize.width];
+        }
+        
+    }else{
+        self.imageSize = self.modalImage.size;
+    }
+    
+    self.imageView.frame = CGRectMake(self.willViewSize.width/2 - self.imageSize.width/2, self.willViewSize.height/2 - self.imageSize.height/2, self.imageSize.width, self.imageSize.height);
+
+    [self.imageView setImage:tempImage];
+}
+
+//-------------------------------------------------------------------------------------------------
 -(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
-  //  self resizeImage:self.modalImage newWidth:<#(CGFloat)#>
+    
+    self.willViewSize = size;
 }
-/*
-#pragma mark - Navigation
+#pragma mark - Resize image
+//-------------------------------------------------------------------------------------------------
+- (UIImage *)resizeImage:(UIImage *)image newWidth:(CGFloat)newWidth {
+    
+    CGFloat scale = newWidth / image.size.width;
+    CGFloat newHeight = image.size.height * scale;
+    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
+    [image drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.imageSize = CGSizeMake(newWidth, newHeight);
+    return newImage;
+}
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//-------------------------------------------------------------------------------------------------
+- (UIImage *)resizeImage:(UIImage *)image newHeight:(CGFloat)newHeight {
+    
+    CGFloat scale = newHeight / image.size.height;
+    CGFloat newWidth = image.size.width * scale;
+    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
+    [image drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.imageSize = CGSizeMake(newWidth, newHeight);
+    return newImage;
 }
-*/
+
+//-------------------------------------------------------------------------------------------------
+#pragma mark - Button action
+-(void)closeButtonTaped{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

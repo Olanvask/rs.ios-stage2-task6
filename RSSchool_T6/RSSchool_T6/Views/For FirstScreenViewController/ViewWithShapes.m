@@ -11,9 +11,7 @@
 #import "RectangleView.h"
 #import "UIColor+task6.h"
 @interface ViewWithShapes()
-@property (nonatomic,strong) CircleView *circleView;
-@property (nonatomic,strong) TriangleView *triangleView;
-@property (nonatomic,strong) RectangleView *rectangleView;
+
 @end
 
 @implementation ViewWithShapes
@@ -26,13 +24,15 @@
     }
     return self;
 }
+
+//-------------------------------------------------------------------------------------------------
 -(void)createShapes{
     self.circleView = [[CircleView alloc] init];
     self.triangleView = [[TriangleView alloc] init];
     self.rectangleView = [[RectangleView alloc] init];
     
 }
-
+//-------------------------------------------------------------------------------------------------
 -(void) layoutShapes{
     self.backgroundColor = UIColor.task6White;
     
@@ -44,22 +44,29 @@
     
     self.axis = UILayoutConstraintAxisHorizontal;
     self.alignment = UIStackViewAlignmentCenter;
-    self.distribution = UIStackViewDistributionEqualSpacing;
+    self.distribution = UIStackViewDistributionFill;
     self.spacing = 20;
     
 }
+
+//-------------------------------------------------------------------------------------------------
 -(void)makeConstraints{
     self.circleView.translatesAutoresizingMaskIntoConstraints = NO;
     self.triangleView.translatesAutoresizingMaskIntoConstraints = NO;
     self.rectangleView.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint activateConstraints:@[
-        [self.circleView.widthAnchor constraintGreaterThanOrEqualToConstant:70],
-        [self.circleView.heightAnchor constraintGreaterThanOrEqualToConstant:70],
-        [self.triangleView.widthAnchor constraintGreaterThanOrEqualToConstant:70],
-        [self.triangleView.heightAnchor constraintGreaterThanOrEqualToConstant:70],
-        [self.rectangleView.widthAnchor constraintGreaterThanOrEqualToConstant:70],
-        [self.rectangleView.heightAnchor constraintGreaterThanOrEqualToConstant:70],
+        [self.circleView.widthAnchor constraintEqualToConstant:70],
+        [self.circleView.heightAnchor constraintEqualToConstant:70],
+        [self.triangleView.widthAnchor constraintEqualToConstant:70],
+        [self.triangleView.heightAnchor constraintEqualToConstant:70],
+        [self.rectangleView.widthAnchor constraintEqualToConstant:70],
+        [self.rectangleView.heightAnchor constraintEqualToConstant:70],
     ]];
 }
-
+//-------------------------------------------------------------------------------------------------
+-(void)animate{
+    [self.triangleView animate];
+    [self.circleView animate];
+    [self.rectangleView animate];
+}
 @end

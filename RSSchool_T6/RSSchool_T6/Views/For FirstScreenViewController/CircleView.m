@@ -19,16 +19,17 @@
     return self;
 }
 
-
+//-------------------------------------------------------------------------------------------------
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     
     UIBezierPath *circlePath = [UIBezierPath bezierPath];
-    [ circlePath addArcWithCenter:CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2) radius:self.bounds.size.width/2 startAngle:0 endAngle:3.14159*2 clockwise:YES];
+    [ circlePath addArcWithCenter:CGPointMake(rect.size.width/2, rect.size.height/2) radius:rect.size.width*0.9/2 startAngle:0 endAngle:3.14159*2 clockwise:YES];
     [UIColor.task6Red setFill];
     [circlePath fill];
 }
 
+//-------------------------------------------------------------------------------------------------
 -(void)animate{
     [UIView animateWithDuration:1.0 delay:0 options: (UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat) animations:^{
         [self setTransform: CGAffineTransformMakeScale(1.2, 1.2)];

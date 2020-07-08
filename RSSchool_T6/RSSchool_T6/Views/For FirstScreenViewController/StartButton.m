@@ -17,8 +17,6 @@
         self.titleLabel.font = [UIFont systemFontOfSize:20 weight: UIFontWeightMedium];
         [self setTitle:@"START" forState:UIControlStateNormal];
         [self setTitleColor:UIColor.task6Black forState:UIControlStateNormal];
-        
-        
     }
     return self;
 }

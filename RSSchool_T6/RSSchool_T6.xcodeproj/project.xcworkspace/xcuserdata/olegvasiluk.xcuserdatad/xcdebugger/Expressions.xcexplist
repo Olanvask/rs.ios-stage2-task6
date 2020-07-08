@@ -3,10 +3,131 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[GalleryViewController viewWillTransitionToSize:withTransitionCoordinator:]:GalleryViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.cellWidth">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ModalPreviewViewController layoutImage]:ModalPreviewViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.imageSize">
+            </PersistentString>
+            <PersistentString
+               value = "self.imageView.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.willViewSize">
+            </PersistentString>
+            <PersistentString
+               value = "self.modalImage.size.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ModalPreviewViewController viewWillAppear:]:ModalPreviewViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.imageSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:main.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[GalleryViewController layoutCollectionView]:GalleryViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[UIDevice currentDevice] orientation]">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame.size.width - 20">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GalleryViewController collectionView:cellForItemAtIndexPath:]:GalleryViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.cellSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GalleryViewController collectionView:layout:sizeForItemAtIndexPath:]:GalleryViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.cellWidth">
+            </PersistentString>
+            <PersistentString
+               value = "self.collectionView.bounds.size.width">
+            </PersistentString>
+            <PersistentString
+               value = "self.collectionView.frame.size.width">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame.size.height">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame.size.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GalleryViewController viewDidLoad]:GalleryViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.frame.size.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DetailViewController setupViews]:DetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "w">
+            </PersistentString>
+            <PersistentString
+               value = "self.asset">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ModalPreviewViewController viewWillLayoutSubviews]:ModalPreviewViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.willViewSize ">
+            </PersistentString>
+            <PersistentString
+               value = "self.imageSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DetailViewController shareButtonTaped]:DetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "activityItems">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "__63-[GalleryViewController collectionView:cellForItemAtIndexPath:]_block_invoke:GalleryViewController.m">
          <PersistentStrings>
             <PersistentString
                value = "self.mediaAggregator.collectionAssetResult.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GalleryCollectionViewCell setImage:]:GalleryCollectionViewCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.bounds.width">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
